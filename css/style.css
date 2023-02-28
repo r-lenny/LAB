@@ -142,19 +142,19 @@ section {
 }
 
 .clubeur-clubeur1 {
-    background-image: url(../img/ProtegeVerre.webp);
+    background-image: url(../img/ProtegeVerre.jpg);
 }
 
 .clubeur-clubeur2 {
-    background-image: url(../img/LAB_Restes_Accompagne.e.x.webp);
+    background-image: url(../img/Accompagne.jpg);
 }
 
 .clubeur-clubeur3 {
-    background-image: url(../img/parlesEn.webp);
+    background-image: url(../img/ParlesEn.jpg);
 }
 
 .clubeur-clubeur4 {
-    background-image: url(../img/Pas_De_Photos.webp);
+    background-image: url(../img/Pas_De_Photos.jpg);
 }
 
 .club {
@@ -163,18 +163,18 @@ section {
 
 .titleClub {
     text-transform: uppercase;
-    font-size: 65px;
+    font-size: 55px;
     color: #d43f4a;
     width: 80%;
     padding-top: 40px;
 }
 
 h4 {
-    font-size: 50px;
+    font-size: 40px;
     background-color: #d43f4a;
     text-align: center;
     font-family: 'Stardust';
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-top: 50%;
 }
