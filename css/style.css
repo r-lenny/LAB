@@ -73,6 +73,15 @@ p {
 
 .placement {
     margin-top: 100%;
+    background-color: #294d9b;
+    color: #d43f4a;
+    padding: 15px;
+}
+
+.clubeurparagraphe {
+    background-color: #294d9b;
+    color: #d43f4a;
+    padding: 15px;
 }
 
 section {
