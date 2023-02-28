@@ -1,0 +1,289 @@
+/* red : #d43f4a;
+blue : #294d9b;
+black : #1a1426; */
+
+@font-face {
+    font-family: 'Stardust';
+    src: url('../font/Stardust-UltraCondMediumIta.woff2') format('woff2'),
+        url('../font/Stardust-UltraCondMediumIta.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC New Baskerville Std';
+    src: url('../font/NewBaskervilleStd-Roman.woff2') format('woff2'),
+        url('../font/NewBaskervilleStd-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes tilt-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0eg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'ITC New Baskerville Std';
+    /* max-width: 450px; */
+}
+
+h1, h2, h3 {
+    font-family: 'Stardust';
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    width: 70%;
+    margin-top: 100%;
+    margin-left: 20%;
+}
+
+.placement {
+    margin-top: 100%;
+}
+
+section {
+    height: 100vh;
+}
+
+.home {
+    background-color: #1a1426;
+}
+
+.clubeur {
+    /* background-color: #d43f4a; */
+    color: #294d9b;
+}
+
+.homeTitle {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    animation: tilt-shaking 1.5s infinite;
+}
+
+.homeEtiquetteClub {
+    background-color: #294d9b;
+    color: #d43f4a;
+    font-size: 50px;
+    width: max-content;
+    position: relative;
+    padding: 0 20px;
+    top: 10%;
+}
+
+.homeEtiquetteClubeur {
+    background-color: #d43f4a;
+    color: #294d9b;
+    font-size: 50px;
+    width: max-content;
+    text-align: end;
+    padding: 0 20px;
+    position: absolute;
+    top: 70%;
+    right: 0;
+}
+
+.number {
+    position: absolute;
+    height: 100vh;
+}
+
+.homeEtiquetteClub-space {
+    margin-bottom: 20px;
+}
+
+.clubeur-clubeur1 {
+    background-image: url(../img/ProtegeVerre.webp);
+}
+
+.clubeur-clubeur2 {
+    background-image: url(../img/LAB_Restes_Accompagné.e.x.webp);
+}
+
+.clubeur-clubeur3 {
+    background-image: url(../img/parlesEn.webp);
+}
+
+.clubeur-clubeur4 {
+    background-image: url(../img/Pas_De_Photos.webp);
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------Menu Burger--------- */
+
+.homeEtiquetteClub-menuElement {
+    left: -13px;
+    top: -90px;
+}
+
+/* a:active {
+    transform: scale(1);
+    transform: translateX(400px);
+    transition: transform 0.2s ease-in-out;
+    
+} */
+
+/* .homeEtiquetteClubeur-menuElement {
+
+} */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 667;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 30px 10px;
+}
+
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #294d9b;
+    z-index: 50;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    background-color: #0e2431;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-items ul li {
+    margin: 10px 0;
+    height: 48px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
