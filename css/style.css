@@ -51,6 +51,7 @@ black : #1a1426; */
 body {
     font-family: 'ITC New Baskerville Std';
     width: 100vw;
+    overflow-x: hidden;
     /* max-width: 450px; */
 }
 
