@@ -108,7 +108,7 @@ section {
 .homeEtiquetteClub {
     background-color: #294d9b;
     color: #d43f4a;
-    font-size: 50px;
+    font-size: 40px;
     width: max-content;
     position: relative;
     padding: 0 20px;
@@ -118,7 +118,7 @@ section {
 .homeEtiquetteClubeur {
     background-color: #d43f4a;
     color: #294d9b;
-    font-size: 50px;
+    font-size: 40px;
     width: max-content;
     text-align: end;
     padding: 0 20px;
