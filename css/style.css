@@ -46,6 +46,7 @@ black : #1a1426; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +70,24 @@ p {
     width: 70%;
     margin-top: 100%;
     margin-left: 20%;
+}
+
+button {
+    font-size: 15px;
+    background-color: #d43f4a;
+    color: #294D9B;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Stardust';
+    position: relative;
+    width: 30%;
+    margin-top: 50px;
+    left: 35%;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .placement {
