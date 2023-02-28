@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Stardust';
+    src: url('Stardust-UltraCondensedMedium.woff2') format('woff2'),
+        url('Stardust-UltraCondensedMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
