@@ -66,7 +66,7 @@ a {
 }
 
 p {
-    font-size: 20px;
+    font-size: 15px;
     width: 70%;
     margin-top: 80%;
     margin-left: 20%;
@@ -327,7 +327,6 @@ h4 {
 .menu-items ul li {
     margin: 10px 0;
     height: 48px;
-    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -346,3 +345,24 @@ h4 {
 .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transform: rotate(-45deg);
 }
+
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 420px) {
+    .nonResponsive {
+      display: none;
+    }
+
+    .desktop {
+        display: block;
+        font-size: 50px;
+        position: absolute;
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 43%;
+        text-align: center;
+    }
+  }
